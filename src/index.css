@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #85a8c5;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 1s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 490px;
+    background-color: #fff;
+}
+
+.carousel-item-text {
+    font-size: 1.15rem;
+    margin: 40px 0 40px 0;
+    padding: 0 20px 0 20px;
+    white-space: normal;
+    color: #617d98;
+}
+
+.carousel-img {
+    width: 250px;
+    padding: 0 20px 0 20px;
+}
+
+/* final stage */
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 60.5%;
+}
+
+.button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.button-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    /* margin-left: 39.6rem; */
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.indicator-buttons {
+    border: none;
+    cursor: pointer;
+}
+
+.indicators>button {
+    margin: 5px;
+    background: none;
+}
+
+.indicator-symbol {
+    color: #26343f;
+}
+
+.indicator-symbol-active {
+    color: #ffffff;
+}
+
+@media screen and (max-width:800px) {
+    .App {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-color: #85a8c5;
+        width: 158vw;
+        height: 100vh
+    }
+
+    .carousel {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .carousel-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 158%;
+    }
+
+
+}
